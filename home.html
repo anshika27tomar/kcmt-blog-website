@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>KCMT Blogging Page</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>KCMT Blogging Page</h1>
+    <p>Share and explore college events and stories.</p>
+  </header>
+
+  <nav>
+    <a href="home.html">Home</a>
+    <a href="index.html">Logout</a>
+  </nav>
+
+  <main>
+    <!-- Existing Blogs -->
+    <section class="blog" id="blog-section">
+      <article>
+        <h2>College Fest Highlights</h2>
+        <p>Relive the best moments from our annual college fest!</p>
+      </article>
+      <article>
+        <h2>Upcoming Events</h2>
+        <p>Stay updated on what's happening next on campus.</p>
+      </article>
+    </section>
+
+    <!-- Blog Post Form -->
+    <section class="add-post">
+      <h2>Post a Blog</h2>
+      <form id="blog-form">
+        <label for="title">Title:</label>
+        <input type="text" id="title" required />
+
+        <label for="content">Content:</label>
+        <textarea id="content" rows="5" required></textarea>
+
+        <button type="submit">Post</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 KCMT Blogging Page. All rights reserved.</p>
+  </footer>
+
+  <script>
+    document.getElementById("blog-form").addEventListener("submit", function (e) {
+      e.preventDefault(); // Prevent form from refreshing the page
+
+      const title = document.getElementById("title").value.trim();
+      const content = document.getElementById("content").value.trim();
+
+      if (title && content) {
+        const blogSection = document.getElementById("blog-section");
+
+        const newArticle = document.createElement("article");
+        const newTitle = document.createElement("h2");
+        const newContent = document.createElement("p");
+
+        newTitle.textContent = title;
+        newContent.textContent = content;
+
+        newArticle.appendChild(newTitle);
+        newArticle.appendChild(newContent);
+
+        blogSection.appendChild(newArticle);
+
+        // Clear input fields
+        document.getElementById("title").value = "";
+        document.getElementById("content").value = "";
+        alert("Blog posted successfully!");
+      } else {
+        alert("Please fill in both fields.");
+      }
+    });
+  </script>
+</body>
+</html>

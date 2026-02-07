@@ -1,0 +1,100 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    background-image:linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('https://www.kcmt.in/images/photogallery/3fa0_DSC_7278.JPG');
+     background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    background-color:#a97a3d;
+    color: white;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #333;
+    padding: 10px 0;
+}
+
+nav a {
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color: #575757;
+}
+
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Blog Section */
+.blog article {
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+}
+
+.blog h2 {
+    color: #333;
+}
+
+/* Form Styles */
+.form-container, .add-post form {
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+form label {
+    display: block;
+    margin: 10px 0 5px;
+    }
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #a97a3d;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+form button:hover {
+    background-color: #333;
+}
+
+footer {
+    text-align: center;
+    background: #333;
+    color: white;
+    padding: 10px 0;
+    margin-top: 20px;
+}
