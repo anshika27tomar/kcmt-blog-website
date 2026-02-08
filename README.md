@@ -1,4 +1,4 @@
-# Anshika Tomar – Blogging Website 🌐
+# Anshika – Blogging Website 🌐
 
 This is a responsive blogging website created using *HTML, CSS, and JavaScript*.
 The project focuses on clean UI, smooth navigation, and beginner-friendly structure.
